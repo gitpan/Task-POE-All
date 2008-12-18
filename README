@@ -1,0 +1,20 @@
+NAME
+    Task::POE::All - Installs all the modules in the POE::* namespace (
+    latest version )
+
+DESCRIPTION
+    This module will use CPANPLUS to retrieve all the modules under the
+    POE::* namespace and install them.
+
+AUTHOR
+    Apocalypse <apocal@cpan.org>
+
+    Big thanks also goes to KANE + BiNGOs for helping me navigate
+    CPANPLUS::Backend!
+
+COPYRIGHT AND LICENSE
+    Copyright 2008 by Apocalypse
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
