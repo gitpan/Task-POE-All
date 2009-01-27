@@ -1,6 +1,6 @@
 ---
 name: Task-POE-All
-version: 1.00
+version: 1.01
 author:
   - 'Apocalypse <APOCAL@cpan.org>'
 abstract: Installs all of the modules in the POE::* namespace
@@ -11,7 +11,7 @@ configure_requires:
   CPANPLUS: 0.84
   Module::Build: 0
 requires:
-  POE::API::Hooks: 1.0443
+  POE::API::Hooks: 2.02
   POE::API::Peek: 2.13
   POE::Component::AI::MegaHAL: 1.16
   POE::Component::AIO: 1.00
@@ -29,7 +29,7 @@ requires:
   POE::Component::CPAN::Reporter: 0.04
   POE::Component::CPAN::SQLite::Info: 0.08
   POE::Component::CPAN::YACSmoke: 1.34
-  POE::Component::CPANPLUS::YACSmoke: 1.52
+  POE::Component::CPANPLUS::YACSmoke: 1.58
   POE::Component::CSS::Minifier: 0.0101
   POE::Component::Cache: 0.001001
   POE::Component::Child: 1.39
@@ -37,31 +37,31 @@ requires:
   POE::Component::Client::Asterisk::Manager: 0.08
   POE::Component::Client::Bayeux: 0.02
   POE::Component::Client::CouchDB::Database: 0.05
-  POE::Component::Client::DNS: 1.01
-  POE::Component::Client::DNSBL: 0.08
-  POE::Component::Client::FTP: 0.20
+  POE::Component::Client::DNS: 1.02
+  POE::Component::Client::DNSBL: 0.10
+  POE::Component::Client::FTP: 0.22
   POE::Component::Client::HTTPDeferred: 0.01001
   POE::Component::Client::Halo: 0.2
   POE::Component::Client::Ident::Agent: 1.14
-  POE::Component::Client::Keepalive: 0.23
+  POE::Component::Client::Keepalive: 0.25
   POE::Component::Client::Lingr: 0.04
-  POE::Component::Client::MPD: 0.009000
+  POE::Component::Client::MPD: 0.009001
   POE::Component::Client::MSN: 0.03
   POE::Component::Client::MogileFS: 0.02
   POE::Component::Client::NNTP: 2.10
   POE::Component::Client::NNTP::Tail: 0.01
   POE::Component::Client::NRPE: 0.10
-  POE::Component::Client::NSCA: 0.12
+  POE::Component::Client::NSCA: 0.14
   POE::Component::Client::Nowa: 0.02
   POE::Component::Client::POP3: 0.02
-  POE::Component::Client::Pastebot: 1.04
+  POE::Component::Client::Pastebot: 1.08
   POE::Component::Client::Ping: 1.14
-  POE::Component::Client::RADIUS: 0.04
+  POE::Component::Client::RADIUS: 0.06
   POE::Component::Client::Rcon: 0.23
   POE::Component::Client::SMTP: 0.20
   POE::Component::Client::SOAP: 0.01
   POE::Component::Client::SOCKS: 0.10
-  POE::Component::Client::Stomp: 0.07
+  POE::Component::Client::Stomp: 0.08
   POE::Component::Client::Stomp::Utils: 0.01
   POE::Component::Client::TCPMulti: 0.0521
   POE::Component::Client::Telnet: 0.06
@@ -70,7 +70,7 @@ requires:
   POE::Component::Client::UserAgent: 0.06
   POE::Component::Client::Whois: 1.18
   POE::Component::Client::Whois::Smart: 0.13
-  POE::Component::Client::opentick: 0.20
+  POE::Component::Client::opentick: 0.21
   POE::Component::ControlPort: 1.0266
   POE::Component::Cron: 0.019
   POE::Component::DBIAgent: 0.26
@@ -78,7 +78,7 @@ requires:
   POE::Component::Daemon: 0.1007
   POE::Component::Daemon::Win32: 0.01
   POE::Component::Data::SimplePassword: 0.0101
-  POE::Component::DebugShell: 1.0411
+  POE::Component::DebugShell: 1.412
   POE::Component::DebugShell::Jabber: 0.04
   POE::Component::DirWatch: 0.200000
   POE::Component::DirWatch::Object: 0.10
@@ -87,11 +87,11 @@ requires:
   POE::Component::Enc::Mp3: 1.2
   POE::Component::Enc::Ogg: 1.05
   POE::Component::FastCGI: 0.1
+  POE::Component::Fuse: 0.01
   POE::Component::GCS::Server: 0.03
   POE::Component::Generic: 0.1100
   POE::Component::Growl: 1.00
   POE::Component::IKC: 0.2002
-  POE::Component::IMDB: 0.5
   POE::Component::IRC::Object: 0.02
   POE::Component::IRC::Plugin::AlarmClock: 0.001
   POE::Component::IRC::Plugin::AntiSpamMailTo: 0.0101
@@ -129,6 +129,7 @@ requires:
   POE::Component::IRC::Plugin::Syntax::Highlight::CSS: 0.0101
   POE::Component::IRC::Plugin::Syntax::Highlight::HTML: 0.0101
   POE::Component::IRC::Plugin::Thanks: 0.02
+  POE::Component::IRC::Plugin::Trac::RSS: 0.11
   POE::Component::IRC::Plugin::URI::Find: 1.06
   POE::Component::IRC::Plugin::Unicode::UCD: 0.001
   POE::Component::IRC::Plugin::Validator::CSS: 0.02
@@ -157,7 +158,7 @@ requires:
   POE::Component::Logger: 1.00
   POE::Component::MDBA: 0.01003
   POE::Component::MXML: 0.03
-  POE::Component::MessageQueue: 0.002004
+  POE::Component::MessageQueue: 0.002005
   POE::Component::Net::FTP: 0.001
   POE::Component::NomadJukebox: 0.02
   POE::Component::NonBlockingWrapper::Base: 0.002
@@ -169,16 +170,16 @@ requires:
   POE::Component::Player::Musicus: 1.32
   POE::Component::Player::Slideshow: 1.4
   POE::Component::Player::Xmms: 0.04
-  POE::Component::Pluggable: 1.10
+  POE::Component::Pluggable: 1.14
   POE::Component::PluginManager: 0.67
   POE::Component::Pool::DBI: 0.012
   POE::Component::Pool::Thread: 0.015
   POE::Component::PreforkDispatch: 0.101
-  POE::Component::Proxy::MSN: 0.02
   POE::Component::Proxy::SOCKS: 0.08
   POE::Component::Proxy::TCP: 1.2
+  POE::Component::PubSub: 0.02
   POE::Component::Q4M: 0.00002
-  POE::Component::RSS: 1.0551
+  POE::Component::RSS: 3.01
   POE::Component::RSSAggregator: 1.11
   POE::Component::RemoteTail: 0.01004
   POE::Component::Rendezvous::Publish: 0.01
@@ -197,7 +198,7 @@ requires:
   POE::Component::Server::HTTP: 0.09
   POE::Component::Server::HTTP::KeepAlive: 0.0300
   POE::Component::Server::HTTPServer: 0.009002
-  POE::Component::Server::IRC: 1.34
+  POE::Component::Server::IRC: 1.38
   POE::Component::Server::Ident: 1.14
   POE::Component::Server::Inet: 0.04
   POE::Component::Server::JSONRPC: 0.02
@@ -210,23 +211,25 @@ requires:
   POE::Component::Server::Qotd: 1.12
   POE::Component::Server::RADIUS: 0.08
   POE::Component::Server::SOAP: 1.13
-  POE::Component::Server::SimpleContent: 1.12
-  POE::Component::Server::SimpleHTTP: 1.48
-  POE::Component::Server::SimpleSMTP: 1.36
+  POE::Component::Server::SimpleContent: 1.14
+  POE::Component::Server::SimpleHTTP: 1.54
+  POE::Component::Server::SimpleSMTP: 1.42
   POE::Component::Server::SimpleXMLRPC: 0.02
   POE::Component::Server::Syslog: 1.16
   POE::Component::Server::Time: 1.12
+  POE::Component::Server::Twirc: 0.06
   POE::Component::Server::XMLRPC: 0.05
-  POE::Component::SimpleDBI: 1.22
+  POE::Component::SimpleDBI: 1.24
   POE::Component::SimpleLog: 1.05
-  POE::Component::SmokeBox: 0.02
+  POE::Component::SmokeBox: 0.06
+  POE::Component::SmokeBox::Backend::Test::SmokeBox::Mini: 0.01
   POE::Component::SmokeBox::Dists: 0.08
-  POE::Component::SmokeBox::Recent: 1.00
+  POE::Component::SmokeBox::Recent: 1.04
   POE::Component::SmokeBox::Uploads::CPAN::Mini: 0.02
   POE::Component::SmokeBox::Uploads::NNTP: 0.08
   POE::Component::SmokeBox::Uploads::RSS: 0.04
   POE::Component::StackedProcessor: 0.05
-  POE::Component::SubWrapper: 0.07
+  POE::Component::SubWrapper: 2.01
   POE::Component::Supervisor: 0.05
   POE::Component::Syntax::Highlight::CSS: 0.0202
   POE::Component::Syntax::Highlight::HTML: 0.0201
@@ -270,10 +273,10 @@ requires:
   POE::Component::YahooMessenger: 0.05
   POE::Declarative: 0.08
   POE::Declare::Meta::Attribute: 0.02
+  POE::Devel::Benchmarker::GetInstalledLoops: 0.04
   POE::Devel::Profiler: 0.02
   POE::Driver::Spread: 0.01
   POE::Event::Message: 0.10
-  POE::Exceptions: 3.0008
   POE::Filter::ASN1: 0.01
   POE::Filter::BigBrother: 0.12
   POE::Filter::Bzip2: 1.58
@@ -282,6 +285,7 @@ requires:
   POE::Filter::ErrorProof: 0.01
   POE::Filter::FSSocket: 0.07
   POE::Filter::Finger: 0.02
+  POE::Filter::HTTP::Parser: 0.06
   POE::Filter::HTTPHead: 0.01
   POE::Filter::IASLog: 1.04
   POE::Filter::IRC: 5.1
@@ -322,8 +326,8 @@ requires:
   POE::NFA: 1.2387
   POE::Net::SNMP: 1.1001
   POE::Session::Attribute: 0.80
-  POE::Session::AttributeBased: 0.07
-  POE::Session::Cascading: 1.0610
+  POE::Session::AttributeBased: 0.09
+  POE::Session::Cascading: 2.01
   POE::Session::GladeXML2: 0.40
   POE::Session::Irssi: 0.50
   POE::Session::MessageBased: 0.01
@@ -341,13 +345,13 @@ requires:
   POE::XS::Loop::Poll: 0.006
   POE::XS::Queue::Array: 0.005
   POE::XUL::Node: 0.05
-  POE::strict: 1.0417
+  POE::strict: 3.01
 dynamic_config: 0
 provides:
   Task::POE::All:
     file: lib/Task/POE/All.pm
-    version: 1.00
-generated_by: Module::Build version 0.3
+    version: 1.01
+generated_by: Module::Build version 0.280801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
