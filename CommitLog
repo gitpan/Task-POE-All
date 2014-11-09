@@ -3,8 +3,32 @@ Changes from 2013-11-09 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 1.100 at 2014-11-09 08:29:00 +0000
+version 1.101 at 2014-11-09 08:59:12 +0000
 ------------------------------------------
+
+  Change: 50d899fc9db768341867adc1b5b4e986ecf4e964
+  Author: Apocalypse <APOCAL@cpan.org>
+  Date : 2014-11-09 00:38:38 +0000
+
+    fix 
+
+------------------------------------------
+version 1.100 at 2014-11-09 08:29:46 +0000
+------------------------------------------
+
+  Change: 20392090d72a93e8b2845921bab84368a4e5b661
+  Author: Apocalypse <APOCAL@cpan.org>
+  Date : 2014-11-09 00:29:46 +0000
+
+    New CPAN release of Task-POE-All - v1.100
+
+    - Converted to Dist::Zilla for the release process!
+
+    - Updates to the auto-generated files
+
+    [STATISTICS]
+
+    - code churn: 20 files changed, 555 insertions(+), 132 deletions(-) 
 
   Change: 59474b398c2cff6aa5efee35e91e42553b57e167
   Author: Apocalypse <APOCAL@cpan.org>

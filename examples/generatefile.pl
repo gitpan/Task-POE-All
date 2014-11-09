@@ -10,6 +10,8 @@
 use strict; use warnings;
 use strict; use warnings;
 
+# run this like: perl examples/generatefile.pl > lib/Task/POE/All.pm
+
 # we use CPANPLUS to search!
 use CPANPLUS::Backend;
 use CPANPLUS::Configure;
@@ -102,9 +104,9 @@ exit;
 sub pkgroup {
 	my( $header, $re ) = @_;
 
-	my $str = "\n=pkgroup $header\n";
+	my $str = "\n=pkgroup $header\n\n";
 	foreach my $s ( grep { $_ =~ $re } sort keys %seen ) {
-		$str .= "=pkg $s $seen{$s}\n";
+		$str .= "=pkg $s $seen{$s}\n\n";
 		delete $seen{$s}; # so our final catch-all will work!
 	}
 
