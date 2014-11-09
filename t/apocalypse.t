@@ -1,15 +1,21 @@
-#!/usr/bin/perl
+#!perl
+#
+# This file is part of Task-POE-All
+#
+# This software is copyright (c) 2014 by Apocalypse.
+#
+# This is free software; you can redistribute it and/or modify it under
+# the same terms as the Perl 5 programming language system itself.
+#
+use strict; use warnings;
 use strict; use warnings;
 
 use Test::More;
-eval "use Test::Apocalypse 0.10";
+eval "use Test::Apocalypse 1.000";
 if ( $@ ) {
 	plan skip_all => 'Test::Apocalypse required for validating the distribution';
 } else {
-	require Test::NoWarnings; require Test::Pod; require Test::Pod::Coverage;	# lousy hack for kwalitee
-
-	# Obviously, we disable the prereq checks because this is a fake module, ha!
 	is_apocalypse_here( {
-		deny => qr/ModuleUsed|Dependencies/,
+		
 	} );
 }
