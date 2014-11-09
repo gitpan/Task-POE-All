@@ -4,11 +4,11 @@ NAME
 
 VERSION
 
-    version 1.101
+      This document describes v1.102 of Task::POE::All - released November 09, 2014 as part of Task-POE-All.
 
 SYNOPSIS
 
-            die 'Not meant to be used directly';
+            # apoc@box:~$ cpanp install Task::POE::All
 
 DESCRIPTION
 
@@ -17,6 +17,8 @@ DESCRIPTION
 TASK CONTENTS
 
  Servers
+
+  POE::Component::Server::AsyncEndpoint 0.10
 
   POE::Component::Server::Bayeux 0.04
 
@@ -68,6 +70,8 @@ TASK CONTENTS
 
   POE::Component::Server::RADIUS 1.08
 
+  POE::Component::Server::SMTP 1.6
+
   POE::Component::Server::SOAP 1.14
 
   POE::Component::Server::SimpleContent 1.14
@@ -81,6 +85,8 @@ TASK CONTENTS
   POE::Component::Server::SimpleXMLRPC 0.02
 
   POE::Component::Server::Syslog 1.20
+
+  POE::Component::Server::TCP 1.365
 
   POE::Component::Server::TacacsPlus 1.11
 
@@ -97,6 +103,8 @@ TASK CONTENTS
   POE::Component::Client::AMQP 0.03
 
   POE::Component::Client::AirTunes 0.01
+
+  POE::Component::Client::Asterisk::Manager 0.08
 
   POE::Component::Client::BigBrother 1.00
 
@@ -119,6 +127,8 @@ TASK CONTENTS
   POE::Component::Client::Halo 0.2
 
   POE::Component::Client::Icecast 0.6
+
+  POE::Component::Client::Ident 1.16
 
   POE::Component::Client::Keepalive 0.272
 
@@ -153,8 +163,6 @@ TASK CONTENTS
   POE::Component::Client::Rcon 0.23
 
   POE::Component::Client::SMTP 0.22
-
-  POE::Component::Client::SOAP 0.01
 
   POE::Component::Client::SOCKS 1.00
 
@@ -194,13 +202,15 @@ TASK CONTENTS
 
   POE::Component::Archive::Any 0.002
 
-  POE::Component::AssaultCube::ServerQuery 0.04
+  POE::Component::AssaultCube::ServerQuery::Server 0.04
 
   POE::Component::AtomAggregator 1.0
 
   POE::Component::Basement 0.01
 
   POE::Component::BlogCloud 0.01
+
+  POE::Component::Bundle::WebDevelopment 1.001004
 
   POE::Component::CD::Detect 1.1
 
@@ -276,6 +286,8 @@ TASK CONTENTS
 
   POE::Component::IKC 0.2402
 
+  POE::Component::IRC 6.88
+
   POE::Component::IRC::Object 0.02
 
   POE::Component::IRC::Plugin::BaseWrap 1.001001
@@ -285,8 +297,6 @@ TASK CONTENTS
   POE::Component::IRC::Plugin::Bollocks 1.00
 
   POE::Component::IRC::Plugin::CPAN::Info 1.001002
-
-  POE::Component::IRC::Plugin::ColorNamer 2.001003
 
   POE::Component::IRC::Plugin::CoreList 1.02
 
@@ -332,8 +342,6 @@ TASK CONTENTS
 
   POE::Component::IRC::Plugin::Seen 0.001001
 
-  POE::Component::IRC::Plugin::Thanks 1.001001
-
   POE::Component::IRC::Plugin::Trac::RSS 0.11
 
   POE::Component::IRC::Plugin::URI::Find 1.10
@@ -357,6 +365,12 @@ TASK CONTENTS
   POE::Component::IRC::Plugin::WWW::XKCD::AsText 0.003
 
   POE::Component::IRC::Plugin::WubWubWub 0.1
+
+  POE::Component::IRC::PluginBundle::Toys 1.001001
+
+  POE::Component::IRC::PluginBundle::WebDevelopment 2.001003
+
+  POE::Component::IRC::Service 0.996
 
   POE::Component::Jabber 3.00
 
@@ -474,6 +488,8 @@ TASK CONTENTS
 
   POE::Component::SmokeBox::Uploads::Rsync 1.000
 
+  POE::Component::Spread 0.02
+
   POE::Component::SpreadClient 1.002
 
   POE::Component::SubWrapper 2.01
@@ -497,8 +513,6 @@ TASK CONTENTS
   POE::Component::WWW::Google::Calculator 0.03
 
   POE::Component::WWW::Google::Time 0.0102
-
-  POE::Component::WWW::Lipsum 1.001004
 
   POE::Component::WWW::OhNoRobotCom::Search 0.002
 
@@ -526,8 +540,6 @@ TASK CONTENTS
 
  Data Parsers and Wheels
 
-  POE::Filter::Asterisk::Manager 0.08
-
   POE::Filter::BigBrother 0.13
 
   POE::Filter::Bzip2 1.58
@@ -554,15 +566,9 @@ TASK CONTENTS
 
   POE::Filter::IASLog 1.08
 
-  POE::Filter::IRC 6.88
-
-  POE::Filter::IRC::P10 0.996
-
   POE::Filter::IRCD 2.44
 
   POE::Filter::IRCv3 1.001001
-
-  POE::Filter::Ident 1.16
 
   POE::Filter::JSON 0.04
 
@@ -597,8 +603,6 @@ TASK CONTENTS
   POE::Filter::Redis 0.02
 
   POE::Filter::Regexp 1.0
-
-  POE::Filter::SMTP 1.2
 
   POE::Filter::SSL 0.28
 
@@ -668,7 +672,7 @@ TASK CONTENTS
 
   POE::Session::Irssi 0.50
 
-  POE::Session::Message 0.111
+  POE::Session::MessageBased 0.111
 
   POE::Session::MultiDispatch 1.3
 
@@ -736,15 +740,11 @@ TASK CONTENTS
 
   POE::Declare::Log::File 0.01
 
-  POE::Driver::Spread 0.01
-
   POE::Event::Message 0.11
 
   POE::Framework::MIDI 0.09
 
   POE::Future 0.03
-
-  POE::NFA 1.365
 
   POE::Quickie 0.18
 
@@ -756,9 +756,137 @@ TASK CONTENTS
 
   POE::TIKC 0.02
 
-  POE::XUL::RDF 0.0600
+  POE::XUL::Javascript 0.0
 
   POE::strict 3.01
+
+SUPPORT
+
+ Perldoc
+
+    You can find documentation for this module with the perldoc command.
+
+      perldoc Task::POE::All
+
+ Websites
+
+    The following websites have more information about this module, and may
+    be of help to you. As always, in addition to those websites please use
+    your favorite search engine to discover more resources.
+
+      * MetaCPAN
+
+      A modern, open-source CPAN search engine, useful to view POD in HTML
+      format.
+
+      http://metacpan.org/release/Task-POE-All
+
+      * Search CPAN
+
+      The default CPAN search engine, useful to view POD in HTML format.
+
+      http://search.cpan.org/dist/Task-POE-All
+
+      * RT: CPAN's Bug Tracker
+
+      The RT ( Request Tracker ) website is the default bug/issue tracking
+      system for CPAN.
+
+      http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-POE-All
+
+      * AnnoCPAN
+
+      The AnnoCPAN is a website that allows community annotations of Perl
+      module documentation.
+
+      http://annocpan.org/dist/Task-POE-All
+
+      * CPAN Ratings
+
+      The CPAN Ratings is a website that allows community ratings and
+      reviews of Perl modules.
+
+      http://cpanratings.perl.org/d/Task-POE-All
+
+      * CPAN Forum
+
+      The CPAN Forum is a web forum for discussing Perl modules.
+
+      http://cpanforum.com/dist/Task-POE-All
+
+      * CPANTS
+
+      The CPANTS is a website that analyzes the Kwalitee ( code metrics )
+      of a distribution.
+
+      http://cpants.cpanauthors.org/dist/overview/Task-POE-All
+
+      * CPAN Testers
+
+      The CPAN Testers is a network of smokers who run automated tests on
+      uploaded CPAN distributions.
+
+      http://www.cpantesters.org/distro/T/Task-POE-All
+
+      * CPAN Testers Matrix
+
+      The CPAN Testers Matrix is a website that provides a visual overview
+      of the test results for a distribution on various Perls/platforms.
+
+      http://matrix.cpantesters.org/?dist=Task-POE-All
+
+      * CPAN Testers Dependencies
+
+      The CPAN Testers Dependencies is a website that shows a chart of the
+      test results of all dependencies for a distribution.
+
+      http://deps.cpantesters.org/?module=Task::POE::All
+
+ Email
+
+    You can email the author of this module at APOCAL at cpan.org asking
+    for help with any problems you have.
+
+ Internet Relay Chat
+
+    You can get live help by using IRC ( Internet Relay Chat ). If you
+    don't know what IRC is, please read this excellent guide:
+    http://en.wikipedia.org/wiki/Internet_Relay_Chat. Please be courteous
+    and patient when talking to us, as we might be busy or sleeping! You
+    can join those networks/channels and get help:
+
+      * irc.perl.org
+
+      You can connect to the server at 'irc.perl.org' and join this
+      channel: #perl-help then talk to this person for help: Apocalypse.
+
+      * irc.freenode.net
+
+      You can connect to the server at 'irc.freenode.net' and join this
+      channel: #perl then talk to this person for help: Apocal.
+
+      * irc.efnet.org
+
+      You can connect to the server at 'irc.efnet.org' and join this
+      channel: #perl then talk to this person for help: Ap0cal.
+
+ Bugs / Feature Requests
+
+    Please report any bugs or feature requests by email to bug-task-poe-all
+    at rt.cpan.org, or through the web interface at
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-POE-All. You will
+    be automatically notified of any progress on the request by the system.
+
+ Source Code
+
+    The code is open to the world, and available for you to hack on. Please
+    feel free to browse it and play with it, or whatever. If you want to
+    contribute patches, please send me a diff or prod me to pull from your
+    repository :)
+
+    https://github.com/apocalypse/perl-poe-taskall
+
+      git clone https://github.com/apocalypse/perl-poe-taskall.git
 
 AUTHOR
 
@@ -770,4 +898,28 @@ COPYRIGHT AND LICENSE
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
+
+    The full text of the license can be found in the LICENSE file included
+    with this distribution.
+
+DISCLAIMER OF WARRANTY
+
+    THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+    APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+    HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT
+    WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT
+    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+    PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE
+    OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU
+    ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+    IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+    WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR
+    CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+    INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES
+    ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT
+    NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES
+    SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO
+    OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY
+    HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 

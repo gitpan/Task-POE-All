@@ -3,8 +3,42 @@ Changes from 2013-11-09 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 1.101 at 2014-11-09 08:59:12 +0000
+version 1.102 at 2014-11-09 11:04:00 +0000
 ------------------------------------------
+
+  Change: 74c7309eac3892ef276f418a28bde363263c4249
+  Author: Apocalypse <APOCAL@cpan.org>
+  Date : 2014-11-09 03:03:48 +0000
+
+    fix synopsis 
+
+  Change: 742140b6651b7d5f5d4f4623c79a501f7c11d3f8
+  Author: Apocalypse <APOCAL@cpan.org>
+  Date : 2014-11-09 02:51:32 +0000
+
+    fix again 
+
+  Change: bd2d2db40d3ca687963502e0f7767875a4d4b483
+  Author: Apocalypse <APOCAL@cpan.org>
+  Date : 2014-11-09 01:16:51 +0000
+
+    tweak POD yet again 
+
+------------------------------------------
+version 1.101 at 2014-11-09 09:02:09 +0000
+------------------------------------------
+
+  Change: 9c61189080c7e11b5246179a712d48d3c3becef1
+  Author: Apocalypse <APOCAL@cpan.org>
+  Date : 2014-11-09 01:02:09 +0000
+
+    New CPAN release of Task-POE-All - v1.101
+
+    - Fixed the POD as I mangled the format, arg!
+
+    [STATISTICS]
+
+    - code churn: 4 files changed, 802 insertions(+), 12 deletions(-) 
 
   Change: 50d899fc9db768341867adc1b5b4e986ecf4e964
   Author: Apocalypse <APOCAL@cpan.org>
